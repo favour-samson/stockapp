@@ -1,0 +1,81 @@
+/* styles/globals.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#ffffff] mx-auto max-w-[1440px];
+  }
+  .dark body {
+    @apply bg-[#131414];
+  }
+}
+
+body {
+  font-family: "Pathway Extreme", sans-serif;
+}
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.hero {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.svg-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.clip-container {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.heroblur-gradient1 {
+  background: linear-gradient(
+    180deg,
+    rgba(222, 141, 28, 0.7) 0%,
+    rgba(74, 61, 42, 0.7) 100%
+  );
+  width: 466.67px;
+  height: 216.12px;
+  opacity: 0.5;
+}
+
+.blur-div {
+  width: 45%;
+  height: 40%;
+  background: linear-gradient(
+    180deg,
+    rgba(222, 141, 28, 0.7) 0%,
+    rgba(74, 61, 42, 0.7) 100%
+  );
+  transform: rotate(-120deg);
+  filter: blur(90px);
+  opacity: 0.4;
+  z-index: 999 !important;
+}
+.blur-div2 {
+  width: 317.19px;
+  height: 146.9px;
+  background: linear-gradient(
+    180deg,
+    rgba(222, 141, 28, 0.7) 0%,
+    rgba(74, 61, 42, 0.7) 100%
+  );
+  transform: rotate(-90deg);
+  filter: blur(75px);
+  opacity: 0.4;
+  right: -5%;
+  top: -5%;
+}
